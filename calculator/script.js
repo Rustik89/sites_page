@@ -5,7 +5,13 @@ const imgToasty = document.querySelector('.calc_toasty');
 const clear_btn = document.querySelector('clear');
 
 equals_btn.addEventListener('click', () => {
-  imgToasty.classList.add('is-active');
+  if (inputFieldEl) {
+    imgToasty.classList.add('is-active');
+  }
+
+  if (inputFieldEl.value === '' && equals_btn) {
+    imgToasty.classList.remove('is-active');
+  }
 });
 
 buttonEl.forEach((btn) => {
