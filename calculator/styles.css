@@ -8,10 +8,26 @@
   padding: 20px;
   max-width: 400px;
   margin-inline: auto;
+
   border: 1px solid #cccccc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-  margin-top: 40px;
+  margin-top: 150px;
+}
+
+.inner {
+}
+
+.calc_toasty {
+  position: relative;
+  opacity: 0;
+  top: 0px;
+  left: 64px;
+  transition: all 0.4s;
+}
+
+.calc_toasty.is-active {
+  opacity: 1;
 }
 
 #result {
